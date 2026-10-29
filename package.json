@@ -1,0 +1,32 @@
+{
+  "name": "dsh-emotion-dice",
+  "version": "0.1.0",
+  "description": "让情绪决定「这一轮怎么说话」：行为掷骰，命中才算，做惯的会变顺，关心和警觉永不脱敏。",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "AGPL-3.0-or-later",
+  "author": "衡（Heng）",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "emotion",
+    "behavior",
+    "companion"
+  ],
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": ">=3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  }
+}
