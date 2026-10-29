@@ -1,0 +1,11 @@
+# dsh-emotion-dice 的挂载补丁
+# 装法：dsh plugin --profile web add <来源>，然后重启 DSH。
+# 建议装在 dsh-emotion 之后：它读情绪状态，顺序不影响读取，只影响注入位置。
+- insert:
+    - id: emotion-dice
+      name: dsh-emotion-dice
+      config:
+        enabled: true
+        behaviorScale: 1
+        maxProbability: 0.45
+        order: 51
